@@ -16,3 +16,4 @@ from app.models.invoice import Invoice
 from app.models.subscription import Subscription
 from app.models.webhook_event import WebhookEvent
 from app.models.audit_log import AuditLog
+from app.models.refresh_token import RefreshToken

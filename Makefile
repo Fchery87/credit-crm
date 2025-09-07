@@ -50,7 +50,7 @@ seed:
 
 test:
 	@echo "Running tests..."
-	$(DOCKER_COMPOSE) run --rm api pytest
+	$(DOCKER_COMPOSE) run --rm api pytest --rootdir /app/tests
 	# $(DOCKER_COMPOSE) run --rm web npm test
 
 lint:

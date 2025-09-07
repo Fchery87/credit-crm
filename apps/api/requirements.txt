@@ -4,10 +4,11 @@ psycopg2-binary
 redis
 sqlalchemy
 alembic
-pydantic
+pydantic[email]
 pydantic-settings
 python-jose[cryptography]
 passlib[bcrypt]
 python-multipart
 pytest
 ruff
+httpx

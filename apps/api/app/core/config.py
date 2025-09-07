@@ -5,7 +5,9 @@ class Settings(BaseSettings):
     PROJECT_NAME: str = "CredKit CRM"
     API_V1_STR: str = "/api/v1"
 
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 8
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 8 # 8 days
+    REFRESH_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 30 # 30 days
+    PASSWORD_RESET_TOKEN_EXPIRE_HOURS: int = 24
     SECRET_KEY: str = secrets.token_urlsafe(32)
 
     DATABASE_URL: str
